@@ -142,7 +142,7 @@ namespace CVCSS_V3
             if (S==0)
             {
                 Impact = 6.42 * ImpactBase;
-                BaseScore = Math.Ceiling(Math.Min(Math.Ceiling((Impact + Exp)*10)/10, 10)*10)/10;
+                BaseScore = Math.Min(Math.Ceiling((Impact + Exp)*10)/10, 10);
                double  BaseScoretry = Math.Ceiling(Math.Ceiling(Math.Min(Impact+Exp, 10)*10))/10;
             }
             else
